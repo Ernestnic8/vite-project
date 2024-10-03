@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Compnt from './componets/component'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +10,9 @@ function App() {
 
   return (
     <>
+      <section>
+        <Compnt msg="I am a component"></Compnt>
+      </section>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
