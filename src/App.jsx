@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  let estaciones = ["Primavera", "verano", "Otoño", "invierno"]
 
   return (
     <>
@@ -22,12 +23,20 @@ function App() {
           count is {count}
         </button>
         <p>
+          LOL
+        </p>
+        <p>
           Edit <code>src/App.jsx</code> and save to test HMR Sleep
         </p>
       </div>
       <p className="read-the-docs">
         Click en el Vite and React logos to learn more
       </p>
+      <ul>
+        {estaciones.map((el, index) => (
+          <li key={index}>{el}</li>
+          ))}
+      </ul>
     </>
   )
 }
