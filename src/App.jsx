@@ -10,6 +10,7 @@ import RederizadoElementos from './componets/RedenrizadoElementos'
 import {EventosES7, Eventos, MasEvents} from './componets/Eventos'
 import Padre from './componets/ComunicacionComponente'
 import { CicloVida } from './componets/CicloVida'
+import AjaxApis from './componets/AjaxApis'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -75,6 +76,8 @@ function App() {
         <Padre/>
         <hr/>
         <CicloVida/>
+        <hr/>
+        <AjaxApis/>
       </section>
     </>
   )
