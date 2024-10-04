@@ -8,6 +8,8 @@ import Estado from './componets/Estado'
 import RenderizadoCondicional from './componets/RederizadoCondicional'
 import RederizadoElementos from './componets/RedenrizadoElementos'
 import {EventosES7, Eventos, MasEvents} from './componets/Eventos'
+import Padre from './componets/ComunicacionComponente'
+import { CicloVida } from './componets/CicloVida'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -69,6 +71,10 @@ function App() {
         <EventosES7/>
         <hr/>
         <MasEvents/>
+        <hr/>
+        <Padre/>
+        <hr/>
+        <CicloVida/>
       </section>
     </>
   )
