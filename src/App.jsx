@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Compnt from './componets/component'
+import Component from './componets/Component'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <section>
-        <Compnt msg="I am a component"></Compnt>
+        <Component msg="I am a Night Knife" />
       </section>
       <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -39,7 +39,7 @@ function App() {
       <ul>
         {estaciones.map((el, index) => (
           <li key={index}>{el}</li>
-          ))}
+        ))}
       </ul>
     </>
   )

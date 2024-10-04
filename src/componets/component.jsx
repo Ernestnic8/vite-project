@@ -1,13 +1,13 @@
-import React, {Component} from "react";
+import PropTypes from 'prop-types';
 
-function Compnt(props){
-    return <h2>{props.msg}</h2>
+const Componente = (props) => {
+    const { msg } = props;
+
+    return <h2> {msg}</h2>
 }
-/*class Compnt extends Component{
-    render()
-    {
-        return <h2>{this.props.msg}</h2>
-    }
-}*/
 
-export default Compnt
+Componente.propTypes = {
+    msg: PropTypes.string.isRequired
+};
+
+export default Componente
