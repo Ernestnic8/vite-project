@@ -70,3 +70,29 @@ export class Eventos extends Component{
         );
     }
 }
+
+ function Boton(props){
+     return <button onClick={props.myOnClick}>Boton Oprimido</button>
+ }
+
+// const Boton = ({myOnClick}) => {
+//     <button onClick={myOnClick}>Boton Oprimido</button>
+// };
+
+export class MasEvents extends Component{
+    handleClick= (e, mensaje) => {
+        console.log(e);
+        console.log(e.nativeEvent);
+        console.log(e.target);
+        console.log(mensaje);
+    }
+    render(){
+        return(
+            <div>
+                <h2>Eventos</h2>
+                <button onClick={(e)=> this.handleClick(e, "Hecho")}>Saludar</button>
+                <Boton myOnClick={(e)=> this.handleClick(e, "Pasando Parametro") }/>
+            </div>
+        )
+    }
+}
