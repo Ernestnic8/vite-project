@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Component from './componets/Component'
+import Propiedad from './componets/Propiedad'
+import Estado from './componets/Estado'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +43,20 @@ function App() {
           <li key={index}>{el}</li>
         ))}
       </ul>
+      <section>
+        <Propiedad 
+        cad= "Intento" 
+        numero={2} 
+        boole={false}
+        cadena = {[9 , 8, 7]}
+        object ={{nombre: "Juan", correo:"juan@gmail.com"}}
+        elementoReact={<i>Elemento react</i>}
+        funcion={(num) => num*num}
+        componenteReact = {<Component msg="Nuevo componente en props" />}
+        />
+        <hr/>
+        <Estado/>      
+      </section>
     </>
   )
 }
