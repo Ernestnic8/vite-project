@@ -5,6 +5,7 @@ import './App.css'
 import Component from './componets/Component'
 import Propiedad from './componets/Propiedad'
 import Estado from './componets/Estado'
+import RenderizadoCondicional from './componets/RederizadoCondicional'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -55,7 +56,9 @@ function App() {
         componenteReact = {<Component msg="Nuevo componente en props" />}
         />
         <hr/>
-        <Estado/>      
+        <Estado/> 
+        <hr/>
+        <RenderizadoCondicional/>     
       </section>
     </>
   )
