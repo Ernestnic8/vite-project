@@ -22,16 +22,18 @@ export default class AjaxApis extends Component {
     }
 
     componentDidMount() {
-        let url = "https://pokeapi.co/api/v2/pokemon";
+        let offset = 990; // Puedes cambiar este valor para obtener otros Pokémon
+        let limit = 30;  // Cambia este valor para la cantidad de Pokémon que deseas
+        let url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
         fetch(url)
             .then(res => res.json())
             .then((json) => {
-                console.log(json);
+                //console.log(json);
                 const fetchPromises = json.results.map(el => {
                     return fetch(el.url)
                         .then(res => res.json())
                         .then(json => {
-                            console.log(json);
+                            //console.log(json);
                             return {
                                 id: json.id,
                                 name: json.name,

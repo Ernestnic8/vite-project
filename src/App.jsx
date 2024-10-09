@@ -11,6 +11,13 @@ import {EventosES7, Eventos, MasEvents} from './componets/Eventos'
 import Padre from './componets/ComunicacionComponente'
 import { CicloVida } from './componets/CicloVida'
 import AjaxApis from './componets/AjaxApis'
+import ContadorHooks from './componets/ContadorHooks'
+import ScrollHooks from './componets/ScrollHOOk'
+import RelojHooks from './componets/RelojHook'
+import AjaxHooks from './componets/AjaxHooks'
+import HooksPersonalizado from './componets/HooksPersnalizado'
+import Referencias from './componets/Referencias'
+import Formularios from './componets/Formularios'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -78,6 +85,20 @@ function App() {
         <CicloVida/>
         <hr/>
         <AjaxApis/>
+        <hr/>
+        <ContadorHooks/>
+        <hr />
+        <ScrollHooks/>
+        <hr/>
+        <RelojHooks/>
+        <hr/>
+        <AjaxHooks/>
+        <hr/>
+        <HooksPersonalizado/>
+        <br/>
+        <Referencias/>
+        <br/>
+        <Formularios/>
       </section>
     </>
   )
