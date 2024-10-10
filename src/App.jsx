@@ -18,6 +18,8 @@ import AjaxHooks from './componets/AjaxHooks'
 import HooksPersonalizado from './componets/HooksPersnalizado'
 import Referencias from './componets/Referencias'
 import Formularios from './componets/Formularios'
+import Estilos from './componets/Estilo'
+import ComponentesEstilizados from './componets/ComponentesEstilizados'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -97,8 +99,12 @@ function App() {
         <HooksPersonalizado/>
         <br/>
         <Referencias/>
+        {/* <br/>
+        <Formularios/> */}
         <br/>
-        <Formularios/>
+        <Estilos/>
+        <br/>
+        <ComponentesEstilizados/>
       </section>
     </>
   )
